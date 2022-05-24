@@ -8,6 +8,8 @@ import CreditCard from './components/CreditCard.jsx';
 import Rating from './components/Rating.jsx';
 import DriverCard from './components/DriverCard.jsx';
 import LikeButton from './components/LikeButton.jsx';
+import ClickablePicture from './components/ClickablePicture.jsx';
+import Dice from './components/Dice.jsx';
 
 const IdArray = [
   {
@@ -110,6 +112,16 @@ function App() {
       <h2>Iteration 8</h2>
 
       <LikeButton />
+
+      <h2>Iteration 9</h2>
+
+      <ClickablePicture
+       img='./../assets/images/maxence.png'
+       imgClicked='./../assets/images/maxence-glasses.png'
+      />
+
+      <h2>iteration 10</h2>
+      <Dice />
 
       <Counter />
     </div>
