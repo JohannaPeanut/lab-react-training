@@ -36,3 +36,18 @@ h4{
   padding: 1em;
   margin: 1em
 }
+
+.driver-card {
+  display: flex;
+  background-color: blue;
+  max-width: 70em;
+  padding: 1em;
+  margin: 1em
+}
+
+.profile-img {
+  max-width: 5em;
+  max-height: 5em;
+  border-radius: 50%;
+  object-fit: cover;
+}
