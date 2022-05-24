@@ -25,3 +25,14 @@ code {
 .card-content {
   padding: 1em;
 }
+
+h4{
+  color: white;
+  text-align: center;
+}
+
+.credit-card {
+  max-width: 25em;
+  padding: 1em;
+  margin: 1em
+}
