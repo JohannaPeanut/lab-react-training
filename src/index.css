@@ -98,3 +98,8 @@ h4{
   height: 10em;
   padding: 2em
 }
+
+.rgbContainer{
+  display: flex;
+  flex-direction: row;
+}

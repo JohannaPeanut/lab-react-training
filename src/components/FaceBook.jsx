@@ -31,7 +31,7 @@ profiles.forEach((p) => {p.id = Math.random()})
         {profiles.map((person)=>{
             return(
                 <div key={person.id}>
-                    <div className="profile" style={{'background-color': same(person.country) ?  'blue' : 'white' }}>
+                    <div className="profile" style={{'backgroundColor': same(person.country) ?  'blue' : 'white' }}>
                     {same(person.country) ? <p>same</p> : <p>not same</p>}
                         <img className="profilepic" src={person.img} alt='profile' />
                         <article>

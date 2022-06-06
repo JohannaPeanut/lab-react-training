@@ -13,6 +13,8 @@ import Dice from './components/Dice.jsx';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook'
+import SignUpPage from './components/SignUpPage';
+import RGBColorPicker from './components/RGBColorPicker';
 
 const IdArray = [
   {
@@ -147,6 +149,10 @@ function App() {
       <NumbersTable limit={12}/>
       <h2>iteration 13</h2>
       <FaceBook/>
+      <h2>iteration 15</h2>
+      <SignUpPage/>
+      <h2>iteration 16</h2>
+      <RGBColorPicker/>
       <h2>Counter</h2>
       <Counter />
     </div>
