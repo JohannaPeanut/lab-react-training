@@ -15,9 +15,11 @@ const LikeButton = () => {
         }
     }
 
+    // or: const color = colorArray[count % colorArray.length]
+
     return (
       <div>
-        <button style={{backgroundColor: colorArray[color]}} onClick={ changes }>{likes} Likes</button>
+        <button style={{backgroundColor: colorArray[color]}} onClick={ changes }>{likes} Like{likes!== 1 ? 's' : ''}</button>
       </div>
     );
   };

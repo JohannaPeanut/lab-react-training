@@ -10,6 +10,8 @@ import DriverCard from './components/DriverCard.jsx';
 import LikeButton from './components/LikeButton.jsx';
 import ClickablePicture from './components/ClickablePicture.jsx';
 import Dice from './components/Dice.jsx';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
 
 const IdArray = [
   {
@@ -33,52 +35,58 @@ const IdArray = [
 function App() {
   return (
     <div className= "App">
+
       <h2>Iteration 1</h2>
       <IdCard person={IdArray[0]}/>
       <IdCard person={IdArray[1]}/>
+
       <h2>Iteration 2</h2>
-      <Greeting lang='en' text='Johanna'/>
-      <Greeting lang='de' text='Tomek'/>
-      <Greeting lang='fr' text='Ludwig'/>
+      <Greeting lang='en'> Johanna</Greeting>
+      <Greeting lang='de'> Ludwig</Greeting>
+      <Greeting lang='fr'> Arnoldo</Greeting>
+
       <h2>Iteration 3</h2>
       <Random min={1} max={6}/>
       <Random min={1} max={100}/>
+
       <h2>Iteration 4</h2>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
+
       <h2>Iteration 5</h2>
       <CreditCard
-  type="Visa"
-  number="0123456789018845"
-  expirationMonth={3}
-  expirationYear={2021}
-  bank="BNP"
-  owner="Maxence Bouret"
-  bgColor="#11aa99"
-  color="white" 
-/>
+        type="Visa"
+        number="0123456789018845"
+        expirationMonth={3}
+        expirationYear={2021}
+        bank="BNP"
+        owner="Maxence Bouret"
+        bgColor="#11aa99"
+        color="white" 
+      />
     
-<CreditCard
-  type="Master Card"
-  number="0123456789010995"
-  expirationMonth={3}
-  expirationYear={2021}
-  bank="N26"
-  owner="Maxence Bouret"
-  bgColor="#eeeeee"
-  color="#222222"
-/>
+      <CreditCard
+        type="Master Card"
+        number="0123456789010995"
+        expirationMonth={3}
+        expirationYear={2021}
+        bank="N26"
+        owner="Maxence Bouret"
+        bgColor="#eeeeee"
+        color="#222222"
+      />
     
-<CreditCard
-  type="Visa"
-  number="0123456789016984"
-  expirationMonth={12}
-  expirationYear={2019}
-  bank="Name of the Bank"
-  owner="Firstname Lastname"
-  bgColor="#ddbb55"
-  color="white" 
-/>
+      <CreditCard
+       type="Visa"
+       number="0123456789016984"
+       expirationMonth={12}
+       expirationYear={2019}
+       bank="Name of the Bank"
+       owner="Firstname Lastname"
+       bgColor="#ddbb55"
+       color="white" 
+      />
+
       <h2>Iteration 6</h2>
 
       <Rating>0</Rating>
@@ -87,8 +95,8 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-      <h2>Iteration 7</h2>
 
+      <h2>Iteration 7</h2>
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -112,6 +120,8 @@ function App() {
       <h2>Iteration 8</h2>
 
       <LikeButton />
+      <LikeButton />
+      <LikeButton />
 
       <h2>Iteration 9</h2>
 
@@ -122,6 +132,18 @@ function App() {
 
       <h2>iteration 10</h2>
       <Dice />
+
+      <h2>iteration 11</h2>
+      <Carousel
+  images={[
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+  ]}
+/>
+      <h2>iteration 12</h2>
+      <NumbersTable limit={12}/>
 
       <Counter />
     </div>

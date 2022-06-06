@@ -13,7 +13,6 @@ function Dice() {
   const newDice = () => {
       setDice(img)
     let randomNo = Math.floor(Math.random() * 6) + 1;
-    console.log(randomNo)
     setTimeout(() => {
         switch(randomNo) {
         case 1:

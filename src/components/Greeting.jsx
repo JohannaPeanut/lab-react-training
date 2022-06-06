@@ -6,7 +6,7 @@ const Greeting = (props) => {
     if(props.lang==='de') greeting = "Hallo"
     return (
       <div>
-          <p>{greeting} {props.text}</p>
+          <p>{greeting} {props.children}</p>
       </div>
     );
   };
