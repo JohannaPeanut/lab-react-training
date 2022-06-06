@@ -12,6 +12,7 @@ import ClickablePicture from './components/ClickablePicture.jsx';
 import Dice from './components/Dice.jsx';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook'
 
 const IdArray = [
   {
@@ -144,7 +145,9 @@ function App() {
 />
       <h2>iteration 12</h2>
       <NumbersTable limit={12}/>
-
+      <h2>iteration 13</h2>
+      <FaceBook/>
+      <h2>Counter</h2>
       <Counter />
     </div>
   );

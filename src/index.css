@@ -84,3 +84,17 @@ h4{
   display: flex;
   flex-direction: row;
 }
+
+.profile{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  margin: 2em;
+ 
+}
+
+.profilepic{
+  max-width:10em;
+  height: 10em;
+  padding: 2em
+}
