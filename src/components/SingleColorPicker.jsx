@@ -1,13 +1,16 @@
-import React from 'react'
+import { useState } from 'react'
 
 const SingleColorPicker = (props) => {
 
-    const color = props.color
-    const value= props.value
+    const handleOnChange = (event) => {
+      const value = event.target.value
+      props.onChange(value)
+    }
 
   return (
     <div>
-        <input onChange={props.onChange(value)} type="number" value={props.value} placeholder="0"/>
+        <span>{props.color.toUpperCase()}</span>
+        <input onChange={handleOnChange} type="number" min="0" max="255" value={props.value} placeholder="0"/>
     </div>
   )
 }

@@ -153,7 +153,7 @@ function App() {
       <SignUpPage/>
       <h2>iteration 16</h2>
       <RGBColorPicker/>
-      <h2>Counter</h2>
+    
       <Counter />
     </div>
   );
